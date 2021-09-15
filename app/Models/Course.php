@@ -13,12 +13,12 @@ class Course extends Model
     protected $table = 'courses';
 
     protected $fillable = [
-        'title', 
-        'logo_path', 
-        'introduction', 
-        'description', 
-        'learn_time', 
-        'quizzes', 
+        'title',
+        'logo_path',
+        'introduction',
+        'description',
+        'learn_time',
+        'quizzes',
         'price',
     ];
 
