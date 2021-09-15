@@ -20,7 +20,7 @@ class Review extends Model
         'location',
     ];
 
-    public function users()
+    public function user()
     {
         return $this->belongsTo(Users::class, 'user_id');
     }
