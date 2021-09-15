@@ -6,14 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class CourseTag extends Model
+class LessonUser extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $table = 'course_tags';
-
     protected $fillable = [
-        'tag_id',
-        'courses_id',
+        'lesson_id',
+        'user_id',
+        'status',
     ];
 }
