@@ -15,9 +15,9 @@ use App\Http\Controllers\Backend\HapolearnController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('home');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
